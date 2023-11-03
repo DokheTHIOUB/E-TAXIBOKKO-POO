@@ -30,7 +30,8 @@ class Utilisateur{
             $stmt=$connexion->prepare($connect);
             if ($stmt->execute()) {
               return $stmt->fetch();
-            }else{
+            }
+            else{
                 echo "down";
             }
             

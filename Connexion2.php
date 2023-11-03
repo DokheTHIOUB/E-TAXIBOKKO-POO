@@ -27,7 +27,6 @@ if (isset($_POST['inscription'])) {
    
 }
 
-
 if (isset($_POST['SeConnecter'])) {
     $email = htmlspecialchars($_POST['mail']);
     $password = htmlspecialchars($_POST['motdepasse']);
@@ -47,7 +46,7 @@ $liste->execute();
 if ($liste->rowCount() > 0) {
     echo "<strong>Liste des utilisateurs</strong>";
     echo "<table>
-             <tr>
+             <tr style='border:2px; ' >
                 <th>Nom</th>
                  <th>Prénom</th>
                  <th>Téléphone</th>
